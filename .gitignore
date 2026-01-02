@@ -1,41 +1,26 @@
-# Dependencies
-node_modules/
-/.pnp
-.pnp.js
+node_modules
+# Keep environment variables out of version control
+.env
 
-# Testing
-/coverage
+# Prisma
+/generated/prisma
 
-# Production
-/build
-/dist
+# Build outputs
+dist/
+build/
+*.log
 
-# Misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# IDEs
-.idea/
+# IDE
 .vscode/
+.idea/
 *.swp
 *.swo
 *~
 
+# OS
+.DS_Store
+Thumbs.db
+
 # Temporary files
-/tmp
 *.tmp
-
-# Service Worker cache
-workbox-*.js
-sw.js.map
-
-# Database
-*.db
-*.sqlite
+/tmp/
